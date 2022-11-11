@@ -60,7 +60,7 @@ class Spider(Spider):  # 元类 默认的元类 type
         import requests
         import http.cookies
         ### 这里加cookie
-        raw_cookie_line = "buvid3=6CA95A6D-AA0F-FDCD-0D9D-BBC73822DC5F18576infoc; _uuid=CB731557-B4A1-FF54-6749-C7AAEA91A32619547infoc; rpdid=|(umY)R|)~lR0J'uYRu))lYR|; CURRENT_BLACKGAP=0; blackside_state=1; PVID=1; buvid4=1BE8C309-527C-41B8-7A4A-FFE44105B78D72792-022031619-ivOqg3rOFK9zM63fKcbe6Q==; CURRENT_FNVAL=4048; b_nut=100; i-wanna-go-back=-1; fingerprint=b64212fad37cd67aa94249e6efaeeaf2; buvid_fp_plain=undefined; SESSDATA=3ce92bd6,1683472755,93fd2*b1; bili_jct=7de4b654e2426f189dcc2b30176d36c9; DedeUserID=12854670; DedeUserID__ckMd5=859490f2de5c4576; b_ut=5; b_lsid=8101071C1A_1845A87AFDC; bp_video_offset_12854670=726396652029477000; hit-new-style-dyn=0; hit-dyn-v2=1; sid=5z6m6229; theme_style=light; CURRENT_QUALITY=80; buvid_fp=b64212fad37cd67aa94249e6efaeeaf2; innersign=0"
+        raw_cookie_line = "buvid3=C4DC8AEB-769F-0DF0-F4F0-923B5B1A2BFB45778infoc; b_nut=1668159445; i-wanna-go-back=-1; b_ut=7; b_lsid=AD6C10B103_184660D1E7C; _uuid=E8D109319-E72D-8102D-237B-BE7AC92C689546674infoc; buvid4=913FAA84-E7E1-A7DC-B548-F2EF360256D647420-022111117-g+jaYKXCYLkM5Uehrx513Q%3D%3D; fingerprint=b64212fad37cd67aa94249e6efaeeaf2; buvid_fp_plain=undefined; SESSDATA=acd3c65c%2C1683711486%2Ceaac1%2Ab2; bili_jct=99fdf2dfdde0e713c75fa28e67548593; DedeUserID=12854670; DedeUserID__ckMd5=859490f2de5c4576; CURRENT_FNVAL=4048; sid=68qz4zou; innersign=1; buvid_fp=b64212fad37cd67aa94249e6efaeeaf2; theme_style=light"
         simple_cookie = http.cookies.SimpleCookie(raw_cookie_line)
         cookie_jar = requests.cookies.RequestsCookieJar()
         cookie_jar.update(simple_cookie)
